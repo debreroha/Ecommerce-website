@@ -4,7 +4,7 @@ const orderSchema = new mongoose.Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      reequired: true,
+      required: true,
       ref: "User",
     },
     orderItems: [
@@ -47,7 +47,7 @@ const orderSchema = new mongoose.Schema(
     },
     shippingPrice: {
       type: Number,
-      requred: true,
+      required: true,
       default: 0.0,
     },
     totalPrice: {
